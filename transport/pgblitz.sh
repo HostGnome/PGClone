@@ -75,6 +75,7 @@ startscript() {
                 --exclude="**jdownloader**" --exclude="**makemkv**" \
                 --exclude="**handbrake**" --exclude="**bazarr**" \
                 --exclude="**ignore**" --exclude="**inProgress**"
+                --drive-upload-cutoff=750G
 
             echo "Upload has finished." >>/var/plexguide/logs/pgblitz.log
         else
