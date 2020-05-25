@@ -61,7 +61,7 @@ startscript() {
                 --transfers="$vfs_t" \
                 --no-traverse \
                 --fast-list \
-                --max-transfer "$vfs_mt" \
+                --max-transfer "50G" \
                 --bwlimit="$bwlimit" \
                 --drive-chunk-size="$vfs_dcs" \
                 --user-agent="$useragent" \
@@ -75,7 +75,7 @@ startscript() {
                 --exclude="**jdownloader**" --exclude="**makemkv**" \
                 --exclude="**handbrake**" --exclude="**bazarr**" \
                 --exclude="**ignore**" --exclude="**inProgress**"
-                --drive-upload-cutoff=740G
+                --drive-upload-cutoff="40G"
 
             echo "Upload has finished." >>/var/plexguide/logs/pgblitz.log
         else
