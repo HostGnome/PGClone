@@ -61,7 +61,7 @@ startscript() {
                 --transfers="$vfs_t" \
                 --no-traverse \
                 --fast-list \
-                --max-transfer "50G" \
+                --max-transfer "$vfs_mt \
                 --bwlimit="$bwlimit" \
                 --drive-chunk-size="$vfs_dcs" \
                 --user-agent="$useragent" \
